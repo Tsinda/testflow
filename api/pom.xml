@@ -10,7 +10,7 @@
 	<artifactId>mohdataflowmodule-api</artifactId>
 	<packaging>jar</packaging>
 	<name>mohdataflowmodule API</name>
-	<description>API project for Basic Module</description>
+	<description>API project for mohdataflowmodule Module</description>
 
 
 
