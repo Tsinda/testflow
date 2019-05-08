@@ -6,7 +6,7 @@
 	<!-- Base Module Properties -->
 	<id>mohdataflowmodule</id>
 	<name>MoH Data Flow Module</name>
-	<version>0.0.2</version>
+	<version>0.0.3-SNAPSHOT</version>
 	<package>org.openmrs.module.mohdataflowmodule</package>
 	<author>MoH-Rwanda</author>
 	<description>
@@ -149,7 +149,12 @@
 		<name>Manage OPD Form - Transfer Out</name>
 		<description>Allows clinician to access Transfer Out section</description>
 	</privilege>
-	
+
+	<privilege>
+		<name>Patient Dashboard - View Patient History</name>
+		<description>Patient Dashboard - View Patient Summary</description>
+	</privilege>
+
 	<!-- /Required Privileges -->
 
 

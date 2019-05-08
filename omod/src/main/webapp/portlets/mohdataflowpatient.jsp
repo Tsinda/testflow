@@ -1,10 +1,12 @@
 <%@ include file="/WEB-INF/template/include.jsp"%>
-<openmrs:require privilege="View Patients" otherwise="/login.htm" redirect="/patientDashboard.form" />
+<openmrs:require privilege="View HMIS Data Flow" otherwise="/login.htm" redirect="/patientDashboard.form" />
 
 <span class="boxHeader"><spring:message code="mohdataflowmodule.patienthistory" /></span>
+<!--
 <center>
 	<a href="${pageContext.request.contextPath}/module/mohdataflowmodule/outpatient.form?patientId=${param.patientId}">OPD Form</a> | <a href="${pageContext.request.contextPath}/module/mohdataflowmodule/inpatient.form?patientId=${param.patientId}">IPD Form</a>
 </center>
+-->
 <br/>
 <div class="box">
 	<table width="100%">
@@ -50,7 +52,7 @@
 				<td class="rowValue" style="border-bottom: 1px solid cadetblue;">${lab.labTest}</td>
 				<td class="rowValue" style="border-bottom: 1px solid cadetblue;">${lab.value}</td>
 				<td class="rowValue" style="border-bottom: 1px solid cadetblue;"> <openmrs:formatDate date="${lab.obsDatetime}" type="medium" /></td>
-				<td class="rowValue" style="border-bottom: 1px solid cadetblue;">${lab.provider.familyName} ${lab.provider.givenName}</td>
+                <td class="rowValue" style="border-bottom: 1px solid cadetblue;">${lab.provider.familyName} ${lab.provider.givenName}</td>
 			</tr>
 		</c:forEach>
 		</tbody>
